@@ -18,6 +18,12 @@
     <hr />
     My Todo List
     <a href="{% url 'task-create' %}">Add Task</a>
+
+    <form action="" method="GET">
+        <input type="text" name="search-area" value="{{ search_input }}">
+        <input type="submit" value="Search">
+    </form>
+
     <table>
         <tr>
             <th>Item</th>
